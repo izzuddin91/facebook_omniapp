@@ -1,2 +1,168 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <%= image_tag("3kualiti.jpg", style: "margin-top:70px;")%>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>3 Kualiti, 2006</h1>
+             
+             
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag("reunion_alip.jpg", style: "margin-top:70px;")%>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Alip's raya open house, 2015</h1>
+              
+              
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag("bthobatch.jpg", style: "margin-top:70px;")%>
+          <div class="container">
+            <div class="carousel-caption">
+              
+             
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+
+<% if flash[:success] %>
+    <div class="notice" style="color:red; text-align:center;">
+      <%= flash[:success] %>
+    </div>
+  <% end %>
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Hello, old friends. <span class="text-muted">How are you?</span></h2>
+          <p class="lead">It's been a decade. PMR, SPM, University, Degree, Master...everyone walks on their own path of life. But once in a while, we are very keen to know what happened to our long lost friends. Where are they now? Here is the place where we live the memory of our past. Welcome to our batch's website. Have a look at the list of our friends below.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="/assets/3kualiti2-ee01501e2002c48725383508735cf3cf0b0c6b222adcc715b4e9df8d8c96b95c.jpg" alt="Generic placeholder image"style="
+    width: 450px;
+    border-radius: 5px;">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="/assets/waisiong2-6ce87524437261f263ceeff3903a6194c8adc875cf741854324221b7a93d00f1.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>See Tho Wai Siong</h2>
+          <p>5 Alpha-Science Stream-Pengawas-English Language Society (ELS)-Rumah Suadamai-Choral Speaking.</p>
+          <p><a class="btn btn-default" href="/see_tho" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="/assets/aku-1668b9ae096ffa8a81b2c5724a560944b9a1b13edebb998d6b33413088a8e2a6.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Muhamad Izzuddin</h2>
+          <p>A former 3 kualiti students whom they (mostly girls) regard as "arrogant".</p>
+          <p><a class="btn btn-default" href="/izzuddin" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="/assets/shuk-944a1eba05b1899abe0e68ff4492d4faf74e34388ae7e9873cbbffd14457e9df.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Shukry</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. .</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+
+
+
+
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

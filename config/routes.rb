@@ -3,9 +3,12 @@ Rails.application.routes.draw do
 
   get 'home/profile'
 
-  get "auth/:provider/callback", to: "sessions#create"
+  get "auth/:provider/callback", to: "sessions#create", as: "facebook"
    delete "sign_out", to: "sessions#destroy", as: "sign_out"
 
+
+   get "see_tho" => "profiles#see_tho"
+get "izzuddin" => "profiles#izzuddin"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
